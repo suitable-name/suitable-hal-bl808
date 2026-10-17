@@ -1,8 +1,14 @@
 [package]
-name = "bl808-hal"
-version = "0.1.0"
+name = "suitable-hal-bl808"
+version = "1.0.0"
 edition = "2021"
-description = "Hardware Abstraction Layer for Bouffalo Lab BL808"
+authors = ["Bouffalo Lab Community"]
+description = "Hardware Abstraction Layer for Bouffalo Lab BL808 (M0/D0/LP cores)"
+license = "MulanPSL-2.0"
+repository = "https://github.com/suitable-name/suitable-hal-bl808"
+readme = "../../README.md"
+keywords = ["embedded", "riscv", "bouffalolab", "bl808", "hal"]
+categories = ["embedded", "hardware-support", "no-std"]
 
 [dependencies]
 bl808-pac = { workspace = true }

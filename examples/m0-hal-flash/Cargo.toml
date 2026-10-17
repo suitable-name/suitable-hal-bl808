@@ -2,9 +2,10 @@
 name = "m0-hal-flash"
 version = "0.1.0"
 edition = "2021"
+publish = false
 
 [dependencies]
-bl808-hal = { path = "../../crates/bl808-hal", features = ["m0", "rt"] }
+bl808-hal = { package = "suitable-hal-bl808", path = "../../crates/bl808-hal", features = ["m0", "rt"] }
 riscv = "0.16.1"
 riscv-rt = "0.18.0"
 panic-halt = "1.0.0"

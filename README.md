@@ -174,10 +174,6 @@ bl808-hal/
 │   └── bl808-hal/           # HAL library crate
 │       ├── src/             # driver modules (one subdirectory per peripheral)
 │       └── tests/           # integration test stubs (unit tests live in src/)
-├── bl808-pac/               # read-only submodule: PAC + bundled C++ SDKs
-│   ├── src/                 # generated PAC Rust source
-│   ├── M1s_BL808_SDK/       # Sipeed M1s BL808 C SDK
-│   └── bl_mcu_sdk_bl808/    # Bouffalo Lab MCU SDK (BL602/BL702/BL808)
 └── apps/
     ├── blinky_d0/           # D0 (C906) LED blink — see apps/blinky_d0/README.md
     └── wifi_m0/             # M0 (E907) WiFi/IPC demo — see apps/wifi_m0/README.md

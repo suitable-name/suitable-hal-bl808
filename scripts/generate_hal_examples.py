@@ -66,9 +66,10 @@ def make_cargo_toml(name, core_feature):
 name = "{name}"
 version = "0.1.0"
 edition = "2021"
+publish = false
 
 [dependencies]
-bl808-hal = {{ path = "../../crates/bl808-hal", features = ["{core_feature}", "rt"] }}
+bl808-hal = {{ package = "suitable-hal-bl808", path = "../../crates/bl808-hal", features = ["{core_feature}", "rt"] }}
 riscv = "0.16.1"
 riscv-rt = "0.18.0"
 panic-halt = "1.0.0"
