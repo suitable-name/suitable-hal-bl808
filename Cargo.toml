@@ -1,0 +1,32 @@
+[workspace]
+members = ["crates/*"]
+exclude = ["bl808-pac", "apps", "examples", "examples/*"]
+resolver = "2"
+
+[workspace.dependencies]
+# Local HAL
+bl808-hal = { path = "crates/bl808-hal" }
+
+# External Dependencies
+bitflags = "2.11.1"
+bl808-pac = { path = "bl808-pac", default-features = false }
+embedded-hal = "1.0"
+embedded-hal-nb = "1.0.0"
+riscv = "0.16.1"
+riscv-rt = "0.18.0"
+critical-section = "1.2"
+panic-halt = "1.0.0"
+nb = "1.1"
+
+[profile.dev]
+debug = true
+lto = false
+panic = "abort"
+
+[profile.release]
+codegen-units = 1
+debug = 2
+lto = "fat"
+opt-level = "s"
+strip = false
+panic = "abort"

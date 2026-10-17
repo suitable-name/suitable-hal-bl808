@@ -1,0 +1,47 @@
+/* D0 Core Interrupts */
+PROVIDE(UART3 = DefaultHandler);
+PROVIDE(I2C2 = DefaultHandler);
+PROVIDE(I2C3 = DefaultHandler);
+PROVIDE(SPI1 = DefaultHandler);
+PROVIDE(DVP2_BUS = DefaultHandler);
+PROVIDE(DMA2_INT0 = DefaultHandler);
+PROVIDE(DMA2_INT1 = DefaultHandler);
+PROVIDE(DMA2_INT2 = DefaultHandler);
+PROVIDE(DMA2_INT3 = DefaultHandler);
+PROVIDE(DMA2_INT4 = DefaultHandler);
+PROVIDE(DMA2_INT5 = DefaultHandler);
+PROVIDE(DMA2_INT6 = DefaultHandler);
+PROVIDE(DMA2_INT7 = DefaultHandler);
+PROVIDE(EMAC = DefaultHandler);
+PROVIDE(DMA2D_INT0 = DefaultHandler);
+PROVIDE(DMA2D_INT1 = DefaultHandler);
+PROVIDE(PWM1 = DefaultHandler);
+PROVIDE(IPC_M0 = DefaultHandler);
+PROVIDE(TIMER1_CH0 = DefaultHandler);
+PROVIDE(TIMER1_CH1 = DefaultHandler);
+PROVIDE(TIMER1_WDT = DefaultHandler);
+
+/* M0 Core Interrupts */
+PROVIDE(DMA0_ALL = DefaultHandler);
+PROVIDE(DMA1_ALL = DefaultHandler);
+PROVIDE(IRTX = DefaultHandler);
+PROVIDE(IRRX = DefaultHandler);
+PROVIDE(USB = DefaultHandler);
+PROVIDE(GPADC_DMA = DefaultHandler);
+PROVIDE(SPI0 = DefaultHandler);
+PROVIDE(UART0 = DefaultHandler);
+PROVIDE(UART1 = DefaultHandler);
+PROVIDE(UART2 = DefaultHandler);
+PROVIDE(GPIO_DMA = DefaultHandler);
+PROVIDE(I2C0 = DefaultHandler);
+PROVIDE(PWM0 = DefaultHandler);
+PROVIDE(IPC_D0 = DefaultHandler);
+PROVIDE(TIMER0_CH0 = DefaultHandler);
+PROVIDE(TIMER0_CH1 = DefaultHandler);
+PROVIDE(TIMER0_WDT = DefaultHandler);
+PROVIDE(I2C1 = DefaultHandler);
+PROVIDE(I2S = DefaultHandler);
+PROVIDE(GPIO_INT0 = DefaultHandler);
+PROVIDE(PDS_WAKEUP = DefaultHandler);
+PROVIDE(HBN_OUT0 = DefaultHandler);
+PROVIDE(HBN_OUT1 = DefaultHandler);

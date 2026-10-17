@@ -1,0 +1,33 @@
+[package]
+name = "bl808-hal"
+version = "0.1.0"
+edition = "2021"
+description = "Hardware Abstraction Layer for Bouffalo Lab BL808"
+
+[dependencies]
+bl808-pac = { workspace = true }
+embedded-hal = { workspace = true }
+embedded-hal-nb = { workspace = true }
+riscv = { workspace = true, features = ["critical-section-single-hart"] }
+critical-section = { workspace = true }
+nb = { workspace = true }
+bitflags = { workspace = true }
+
+[dev-dependencies]
+# Enable std for host-side unit testing
+critical-section = { workspace = true, features = ["std"] }
+smol = "2"
+
+[features]
+# No default core: m0/d0/lp are mutually exclusive (they select mutually
+# exclusive PAC cores), so a target core MUST be selected explicitly. Build,
+# test and lint one core at a time, e.g.:
+#   cargo test  --features m0     cargo clippy --features m0 --tests
+#   cargo test  --features d0     cargo clippy --features d0 --tests
+#   cargo test  --features lp     cargo clippy --features lp --tests
+default = []
+rt = ["bl808-pac/rt"]
+m0 = ["bl808-pac/m0", "bl808-pac/critical-section"]
+d0 = ["bl808-pac/d0", "bl808-pac/critical-section"]
+lp = ["bl808-pac/lp", "bl808-pac/critical-section"]
+mock = []

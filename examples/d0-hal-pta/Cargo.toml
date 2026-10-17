@@ -1,0 +1,11 @@
+[package]
+name = "d0-hal-pta"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bl808-hal = { path = "../../crates/bl808-hal", features = ["d0", "rt"] }
+riscv = "0.16.1"
+riscv-rt = "0.18.0"
+panic-halt = "1.0.0"
+embedded-hal = "1.0"
