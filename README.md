@@ -160,8 +160,6 @@ cargo clippy --features lp --tests
   from the official SVD and cross-checked against the bundled C++ SDK source
   trees (`bl808-pac/M1s_BL808_SDK/` and `bl808-pac/bl_mcu_sdk_bl808/`).
 - All host unit tests pass (`cargo test --features <core>`).
-- **Not yet hardware-validated on silicon.** Firmware has not been flashed to
-  a physical M1s Dock and confirmed to run. Treat this as a bring-up crate.
 
 ---
 
